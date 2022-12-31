@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "https://myeongseoklee.github.io/movielist/static/js/main.958ec055.js",
-    "index.html": "https://myeongseoklee.github.io/movielist/index.html",
-    "main.958ec055.js.map": "https://myeongseoklee.github.io/movielist/static/js/main.958ec055.js.map"
+    "main.js": "/movielist/static/js/main.ef0d9e15.js",
+    "index.html": "/movielist/index.html",
+    "main.ef0d9e15.js.map": "/movielist/static/js/main.ef0d9e15.js.map"
   },
   "entrypoints": [
-    "static/js/main.958ec055.js"
+    "static/js/main.ef0d9e15.js"
   ]
 }
