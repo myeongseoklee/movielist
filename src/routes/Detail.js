@@ -1,5 +1,6 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 function Detail() {
   const [loading, setLoading] = useState(true);
@@ -14,7 +15,6 @@ function Detail() {
     ).json();
     setMovie(json.data.movie);
     setLoading(false);
-    console.log(json);
   };
 
   useEffect(() => {
@@ -30,14 +30,24 @@ function Detail() {
           <h1>Detail</h1>
           <hr />
           <br />
-          <img src={movie.large_cover_image} />
+          <img
+            src={movie.large_cover_image}
+            alt={movie.title}
+          />
           <br />
           <h2>{movie.title_long}</h2>
           <p>{movie.description_full}</p>
           <p> - Rating : {movie.rating}</p>
           <p> - Genres : {movie.genres.join(' / ')}</p>
           <p>
-            - More : <Link to={movie.url}>{movie.url}</Link>
+            - More :{' '}
+            <a
+              href={movie.url}
+              target='_blank'
+              rel='noreferrer'
+            >
+              {movie.url}
+            </a>
           </p>
         </div>
       )}
