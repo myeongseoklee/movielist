@@ -28,7 +28,6 @@ function Detail() {
       ) : (
         <div>
           <h1>Detail</h1>
-          <hr />
           <br />
           <img
             src={movie.large_cover_image}
